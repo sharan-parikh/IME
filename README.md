@@ -5,11 +5,11 @@ This is a purely Java based application that uses MVC architecture and other bes
 This application can be run either through a CLI or a GUI.
 
 For running the application in CLI mode, you can create a jar and run the jar using the following command just like any other Java application:
-- command java -jar Assignment6.jar -text
+- command java -jar Assignment6.jar {operation}
 
-where *text is IME operation you want to perform. For a full list of operations please check the USEME.txt file inside the IME folder. If you have a set of operations that
+where *operation is IME operation you want to perform. For a full list of operations please check the USEME.txt file inside the IME folder. If you have a set of operations that
 you want to perform one after the another, then you can use the following command:
-- command java -jar Assignment6.jar -fileName
+- command java -jar Assignment6.jar -file {fileName}
 
 where *fileName is the text file where you have mentioned the operations. Each line of the file should have one operation.
 
