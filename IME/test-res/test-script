@@ -1,0 +1,74 @@
+#load dog.ppm and call it 'dog'
+load test-res/images/dog.ppm dog
+
+#brighten dog by adding 10
+brighten 50 dog dog-brighter
+
+#save dog-brighter
+save test-res/images/dog-brighter.ppm dog-brighter
+
+#darken dog by subtracting 50
+darken 50 dog dog-darker
+
+#save the darkened image
+save test-res/images/dog-darker.ppm dog-darker
+
+#flip dog vertically
+vertical-flip dog dog-vertical
+
+#save dog-vertical
+save test-res/images/dog-vertical.ppm dog-vertical
+
+#flip the dog horizontally
+horizontal-flip dog dog-horizontal
+
+#save dog-horizontal
+save test-res/images/dog-horizontal.ppm dog-horizontal
+
+#create a greyscale using only the value component, as an image dog-greyscale
+greyscale value-component dog dog-gs-value
+
+#save dog-greyscale
+save test-res/images/dog-gs-value.ppm dog-gs-value
+
+#overwrite dog with another file
+load test-res/images/dog-1.ppm dog
+
+#split dop image into red, green and blue greyscale images
+rgb-split dog dog-red dog-green dog-blue
+
+save test-res/images/dog-split-red.ppm dog-red
+save test-res/images/dog-split-blue.ppm dog-blue
+save test-res/images/dog-split-green.ppm dog-green
+
+#brighten just the red image
+brighten 50 dog-red dog-red
+
+#combine them back, but using the brightened red image
+rgb-combine dog-red-tint dog-red dog-blue dog-green
+save test-res/images/dog-red-tint.ppm dog-red-tint
+
+#dither command example
+dither dog dog-dithered
+
+#save the dithered version as bmp file
+save test-res/images/dog-dithered.bmp dog-dithered
+
+#blur command example
+blur dog dog-blurred
+
+#save the blurred version as jpg file
+save test-res/images/dog-blurred.jpg dog-blurred
+
+#sharpen command example
+sharpen dog dog-sharpened
+
+#save the sharpened version as jpg file.
+save test-res/images/dog-sharpened.jpg dog-sharpened
+
+#sepia command example
+sepia dog dog-sepia
+
+#save the sepia version
+save test-res/images/dog-sepia.ppm dog-sepia
+

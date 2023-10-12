@@ -1,0 +1,19 @@
+GUI Usage:
+General description: The GUI is split into various regions. The first region has panels to display image and histogram. The next region is to load and save an image. The regions after this are for image manipulation operations. 
+Features:
+1.	Non Manipulative:
+	a.	Load: Before performing any operation we need to load an image. Upon clicking the load button a file manager window will pop up where the directories can be navigated to 		select a file.  
+	b.	Save: To save an image click on the save button and similar to load a file manager will popup where the appropriate name should be given wiht the right extention		(.jpg,.png,.bmp,.ppm)to save the image.
+2.	Manipulative:
+	a.	Horizontal/Vertical flip: Just click on the respective buttons to perform the operations and the resultant image will be displayed.
+	b.	Rgb-Split: To split an image into respective components click of the ‘Rgb-Split’ button. A dialog will pop up displaying three image of red, green and blue components. Also 		a drop down is displayed to select the component that needs to be used for further manipulation. 
+ 
+	c.	Rgb-combine: To combine images click of the ‘Rgb- combine’ button. A dialog will pop up displaying three buttons to select image similar to the load operation. Once the ‘OK’ 		button is pressed the images are combined and the resultant image and histogram are displayed.
+	d.	Blur: To blur the current image click on the ‘blur’ button.
+	e.	Dither: To dither the current image click on the ‘dither’ button.
+	f.	Sharpen: To sharpen the current image click on the ‘sharpen’ button.
+	g.	Sepia: To create a sepia tone of the current image click on the ‘sepia’ button.
+	h.	Visualization: Select the respective component from the dropdown and click on the ‘Visualize(Greyscale)’ button to perform the action on the current image.
+	i.	Brighten/Darken: To brighten an image enter a positive value in the text box and click on the ‘Brighten/Darken’ button. To darken an image enter a negative value in the text 		box and click on the ‘Brighten/Darken’ button. 
+
+
