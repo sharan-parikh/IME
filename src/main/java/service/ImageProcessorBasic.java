@@ -1,9 +1,15 @@
 package service;
 
+import java.io.InputStream;
+
 import constant.Component;
 import model.RGBImageModel;
 
 public interface ImageProcessorBasic {
+
+  void save(InputStream in);
+
+  RGBImageModel load(String imgName);
 
   RGBImageModel verticalFlip(RGBImageModel image);
 
