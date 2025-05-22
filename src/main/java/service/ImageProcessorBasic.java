@@ -7,7 +7,7 @@ import model.RGBImageModel;
 
 public interface ImageProcessorBasic {
 
-  void save(InputStream in);
+  void save(String name, InputStream in);
 
   RGBImageModel load(String imgName);
 
