@@ -1,11 +1,13 @@
 package service;
 
+import java.io.IOException;
 import java.io.InputStream;
 
-import model.RGBImageModel;
+import model.Image;
+import model.PPMImage;
 
 public interface ImageLoader {
 
-  RGBImageModel load(InputStream in);
+  Image load(InputStream in) throws IOException;
 
 }

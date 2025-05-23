@@ -5,12 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import model.RGBImageModel;
+import model.Image;
+import model.PPMImage;
 import model.RGBPixel;
 
 public class PpmImageLoader implements ImageLoader {
   @Override
-  public RGBImageModel load(InputStream in) {
+  public Image load(InputStream in) {
     Scanner sc = new Scanner(in);
 
     StringBuilder builder = new StringBuilder();
@@ -49,6 +50,6 @@ public class PpmImageLoader implements ImageLoader {
       }
       image2D.add(pixels);
     }
-    return new RGBImageModel(height, width);
+    return new PPMImage(width, height, maxValue);
   }
 }
