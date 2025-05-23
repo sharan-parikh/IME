@@ -51,6 +51,16 @@ public class RGBPixel {
   }
 
   /**
+   * Calculates the 'Value' of the pixel, which is the maximum of its
+   * red, green, and blue components.
+   *
+   * @return The value component.
+   */
+  public int getValue() {
+    return Math.max(redComp, Math.max(greenComp, blueComp));
+  }
+
+  /**
    * Clamps an integer value to be within the valid pixel range [0, 255].
    *
    * @param value The integer value to clamp.

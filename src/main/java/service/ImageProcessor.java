@@ -8,15 +8,15 @@ import model.Image;
 
 public interface ImageProcessor {
 
-  Image verticalFlip(Image image);
+  Image verticalFlip(Image srcImage);
 
-  Image horizontalFlip(Image image);
+  Image horizontalFlip(Image srcImage);
 
-  Image visualize(Component component);
+  Image visualize(Image srcImage, Component component);
 
-  Image brighten(Image image, int increment);
+  Image brighten(Image srcImage, int increment);
 
-  Image rgbSplit(Image image);
+  Image[] rgbSplit(Image srcImage);
 
   Image rgbCombine(Image redImage, Image greenImage, Image blueImage);
 }

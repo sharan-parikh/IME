@@ -7,6 +7,5 @@ public enum Component {
   GREEN,
   VALUE,
   INTENSITY,
-  COMPONENT;
-
+  LUMA
 }
